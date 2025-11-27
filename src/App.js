@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Navbar from './component/Navbar';
+import Textform from './component/textform';//it is file name not a component name
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return ( <>
+    
+
+<Navbar title="textUtile2" about="about us" homelink="https://www.google.com/"/>
+<div className="container my-3" > 
+<Textform  heading="enter the text below"/> 
+
+</div>
+    </>
+    
+    
+    
+    
+    
+    
+    
+
+    );
 }
 
+
 export default App;
+
+//margin from top and bottom: my-3
+//className="container" to make it responsive and aligned in center
